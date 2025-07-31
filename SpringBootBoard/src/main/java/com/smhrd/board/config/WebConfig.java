@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/uploads/**") // 사용자가 브라우저에서 요청하는 접근 경로
-                .addResourceLocations("file:C:/upload/"); // 실제로는 서버의 해당 경로에 있는 이미지를 찾아주세요
+                .addResourceLocations("file:home/git/uploads/"); // 실제로는 서버의 해당 경로에 있는 이미지를 찾아주세요
 	    }
 	}
 
